@@ -2,11 +2,13 @@
 //alert("Hello Java Script!!!");
 console.log("Hello Java Script from console!!!")
 
-let empty; //undefined
-let nullObject = null;
-let number = 44.2;
-let email = "helen@gmail.com";
-let flag = false;
+let empty;                     //undefined
+let nullObject = null;         //null
+let number = 44.2;             //number
+let email = "helen@gmail.com"; //string
+let flag = false;              //boolean
+let sum = function(a,b){console.log(`${a} + ${b} = ${a+b}`)}//function
+let array = [1,2,3,"red","green",false,[11,12,13],sum];//object
 console.log(number);
 console.log(typeof(number));
 
@@ -23,12 +25,10 @@ console.log(`Email = ${email}, type : ${typeof(email)}`);
 console.log(`Empty = ${empty}, type : ${typeof(empty)}`);
 console.log(`nullObject = ${nullObject}, type : ${typeof(nullObject)}`);
 
-let sum = function(a,b){console.log(`${a} + ${b} = ${a+b}`)}
 console.log(`sum = ${sum}, type : ${typeof(sum)}`);
 
 sum(5,6)
 
-let array = [1,2,3,"red","green",false,[11,12,13],sum];
 console.log(`array = ${array}, type : ${typeof(array)}`);
 console.log(array[0])
 console.log(array[6])
